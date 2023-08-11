@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="screen">
+                <input type="text" name="display">
+            </div>
+
+            <div>
+                <input class="buttonNegative" type="button" value="(+\-)" onclick="display.value += '-'">
+                <input class="buttonCancelAll" type="button" value="CA" onclick="display.value = ' '">
+                <input class="buttonCancel" type="button" value="C" onclick="display.value.toString().slice(0,-1)">
+                <input class="buttonPercent" type="button" value="%" onclick="display.value += '/100'">
+            </div>
+
+            <div>
+                <input class="buttonSeven" type="button" value="7" onclick="display.value += '7'">
+                <input class="buttonEight" type="button" value="8" onclick="display.value += '8'">
+                <input class="buttonNine" type="button" value="9" onclick="display.value += '9'">
+                <input class="buttonDivide" type="button" value="/" onclick="display.value += '/'">
+            </div>
+
+            <div>
+                <input class="buttonFour" type="button" value="4" onclick="display.value += '4'">
+                <input class="buttonFive" type="button" value="5" onclick="display.value += '5'">
+                <input class="buttonSix"type="button" value="6" onclick="display.value += '6'">
+                <input class="buttonMultiply" type="button" value="*" onclick="display.value += '*'">
+            </div>
+
+            <div>
+                <input class="buttonOne" id="buttonOne" type="button" value="1">
+                <input class="buttonTwo" id="buttonTwo" type="button" value="2" onclick="display.value += '2'">
+                <input class="buttonThree" id="buttonThree" type="button" value="3" onclick="display.value += '3'">
+                <input class="buttonMinus" id="buttonMinus" type="button" value="-" onclick="display.value += '-'">
+            </div>
+
+            <div>
+                <input class="buttonEqual" id="buttonEqual" type="button" value="=" onclick="display.value = eval(display.value)">
+                <input class="buttonZero" type="button" value="0" onclick="display.value += '0'">
+                <input class="buttonDot" type="button" value="." onclick="display.value += '.'">
+                <input class="buttonPlus" type="button" value="+" onclick="display.value += '+'">
+                <input class="buttonRoundOff" type="button" value="RO" onclick="display.value = 'math.round(display.value)'">
+            </div>
+        </form>
+    </div>
+ -->
+
+<div class="container">
+    <h1>Basic Calculator</h1>
+    <div class="screen">
+        <span id="display"></span>
+    </div>
+
+    <div class="row-one">
+        <button class="" id="buttonRoundOff">R-O</button>
+        <button class="" id="buttonCancel">C</button>
+        <button class="" id="buttonPercent">%</button>
+        <button class="" id="buttonDivide">\</button>
+    </div>
+
+    <div class="row-two">
+        <button class="" id="buttonSeven">7</button>
+        <button class="" id="buttonEight">8</button>
+        <button class="" id="buttonNine">9</button>
+        <button class="" id="buttonMultiply">*</button>
+    </div>
+
+    <div class="row-three">
+        <button class="" id="buttonFour">4</button>
+        <button class="" id="buttonFive">5</button>
+        <button class="" id="buttonSix">6</button>
+        <button class="" id="buttonMinus">-</button>
+    </div>
+
+    <div class="row-four">
+        <button class="" id="buttonOne">1</button>
+        <button class="" id="buttonTwo">2</button>
+        <button class="" id="buttonThree">3</button>
+        <button class="" id="buttonPlus">+</button>
+    </div>
+
+    <div class="row-five">
+        <button class="" id="buttonNegative">(+/-)</button>
+        <button class="" id="buttonZero">0</button>
+        <button class="" id="buttonDot">.</button>
+        <button class="" id="buttonEqual">=</button>
+    </div>
+
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
